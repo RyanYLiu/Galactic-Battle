@@ -1,0 +1,9 @@
+
+.vscode/settings.json
+Logs/
+Library/
+obj/
+ProjectSettings/
+Temp/
+*.sln
+*csproj

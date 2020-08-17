@@ -1,0 +1,1586 @@
+fileFormatVersion: 2
+guid: b5a5a6e776153bc42bb465530b9bcf04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8617139828006653773
+    second: Charging_0
+  - first:
+      213: 5882944719729732422
+    second: Charging_1
+  - first:
+      213: -3170170762394407167
+    second: Charging_2
+  - first:
+      213: -7523424487348634149
+    second: Charging_3
+  - first:
+      213: 5589475859786109819
+    second: Charging_4
+  - first:
+      213: 1309244187014032174
+    second: Charging_5
+  - first:
+      213: 3917311654249575401
+    second: Charging_6
+  - first:
+      213: 7359085982769613002
+    second: Charging_7
+  - first:
+      213: -7399280286851694443
+    second: Charging_8
+  - first:
+      213: -8051609633314840401
+    second: Charging_9
+  - first:
+      213: -102134368773772498
+    second: Charging_10
+  - first:
+      213: -555638395327079999
+    second: Charging_11
+  - first:
+      213: -6874427942995413038
+    second: Charging_12
+  - first:
+      213: -7245543456784081995
+    second: Charging_13
+  - first:
+      213: 2692240233304956523
+    second: Charging_14
+  - first:
+      213: 5516919291586660172
+    second: Charging_15
+  - first:
+      213: 218892725076238087
+    second: Charging_16
+  - first:
+      213: 7752005147065941589
+    second: Charging_17
+  - first:
+      213: -2520265757271972211
+    second: Charging_18
+  - first:
+      213: -2860122291378242741
+    second: Charging_19
+  - first:
+      213: 6462587867694978143
+    second: Charging_20
+  - first:
+      213: -3474158360672853023
+    second: Charging_21
+  - first:
+      213: -7239236813474285505
+    second: Charging_22
+  - first:
+      213: -4174341163175967168
+    second: Charging_23
+  - first:
+      213: 4584904630420438565
+    second: Charging_24
+  - first:
+      213: 4398920561806944218
+    second: Charging_25
+  - first:
+      213: 7073516078094724437
+    second: Charging_26
+  - first:
+      213: -6941801914140306210
+    second: Charging_27
+  - first:
+      213: 4179772647590549186
+    second: Charging_28
+  - first:
+      213: -3294503472311233427
+    second: Charging_29
+  - first:
+      213: -5374596921112642993
+    second: Charging_30
+  - first:
+      213: 8049555070973790917
+    second: Charging_31
+  - first:
+      213: -3671540884293050814
+    second: Charging_32
+  - first:
+      213: 7186001089481931634
+    second: Charging_33
+  - first:
+      213: 2044466849220893784
+    second: Charging_34
+  - first:
+      213: -4101530204208326883
+    second: Charging_35
+  - first:
+      213: 4455319634761380140
+    second: Charging_36
+  - first:
+      213: -1739917275738972977
+    second: Charging_37
+  - first:
+      213: 8287386140557272168
+    second: Charging_38
+  - first:
+      213: 8473408291333430686
+    second: Charging_39
+  - first:
+      213: -7430808598307148285
+    second: Charging_40
+  - first:
+      213: -3177784371750323345
+    second: Charging_41
+  - first:
+      213: 7104084123785516905
+    second: Charging_42
+  - first:
+      213: 1198118485752854809
+    second: Charging_43
+  - first:
+      213: 76668375113000678
+    second: Charging_44
+  - first:
+      213: 3001873429655999624
+    second: Charging_45
+  - first:
+      213: 3704296419079011264
+    second: Charging_46
+  - first:
+      213: 569120338230050887
+    second: Charging_47
+  - first:
+      213: 4530766198663866450
+    second: Charging_48
+  - first:
+      213: -8451331803387071862
+    second: Charging_49
+  - first:
+      213: 5637720437699484383
+    second: Charging_50
+  - first:
+      213: 4037850063910692595
+    second: Charging_51
+  - first:
+      213: -6880734225120170286
+    second: Charging_52
+  - first:
+      213: 1342756466062576438
+    second: Charging_53
+  - first:
+      213: -4366910727583843145
+    second: Charging_54
+  - first:
+      213: -3878669797679489275
+    second: Charging_55
+  - first:
+      213: -424556690762318372
+    second: Charging_56
+  - first:
+      213: -5624149208062666973
+    second: Charging_57
+  - first:
+      213: -269277808094271749
+    second: Charging_58
+  - first:
+      213: 7978275661531798382
+    second: Charging_59
+  - first:
+      213: -2453174629285683127
+    second: Charging_60
+  - first:
+      213: -5612021841819109268
+    second: Charging_61
+  - first:
+      213: 6619122580064870045
+    second: Charging_62
+  - first:
+      213: -1271943366995626203
+    second: Charging_63
+  - first:
+      213: -5339586958963187591
+    second: Charging_64
+  - first:
+      213: 749181497349317406
+    second: Charging_65
+  - first:
+      213: -8414340932879563481
+    second: Charging_66
+  - first:
+      213: 5414904827303536081
+    second: Charging_67
+  - first:
+      213: -5509019794084796419
+    second: Charging_68
+  - first:
+      213: 1439669160487847813
+    second: Charging_69
+  - first:
+      213: 3419360199143167567
+    second: Charging_70
+  - first:
+      213: -8245362326531495912
+    second: Charging_71
+  - first:
+      213: -7613277069018375968
+    second: Charging_72
+  - first:
+      213: -6607802101070211041
+    second: Charging_73
+  - first:
+      213: 5214278028604405989
+    second: Charging_74
+  - first:
+      213: 9148786997296334402
+    second: Charging_75
+  - first:
+      213: -5353740638775766401
+    second: Charging_76
+  - first:
+      213: 1470691024571354447
+    second: Charging_77
+  - first:
+      213: 56750987178209805
+    second: Charging_78
+  - first:
+      213: 7051395552488328382
+    second: Charging_79
+  - first:
+      213: -4061114916061310951
+    second: Charging_80
+  - first:
+      213: -8750492626687837762
+    second: Charging_81
+  - first:
+      213: -3844932935129575868
+    second: Charging_82
+  - first:
+      213: -890051117088068739
+    second: Charging_83
+  - first:
+      213: -4161099160322175092
+    second: Charging_84
+  - first:
+      213: -2706957456390852995
+    second: Charging_85
+  - first:
+      213: -1774415060027412681
+    second: Charging_86
+  - first:
+      213: 6617786464524216202
+    second: Charging_87
+  - first:
+      213: -1940143614787738693
+    second: Charging_88
+  - first:
+      213: -3227455541810393697
+    second: Charging_89
+  - first:
+      213: -8867731007038781839
+    second: Charging_90
+  - first:
+      213: -296745783125181580
+    second: Charging_91
+  - first:
+      213: 4035697417470468246
+    second: Charging_92
+  - first:
+      213: -9090880534542879783
+    second: Charging_93
+  - first:
+      213: 5582182267474686808
+    second: Charging_94
+  - first:
+      213: 3016936466759831623
+    second: Charging_95
+  - first:
+      213: 8063667803258802280
+    second: Charging_96
+  - first:
+      213: -4093467220302822176
+    second: Charging_97
+  - first:
+      213: -4097977352944002889
+    second: Charging_98
+  - first:
+      213: -3218332808740387663
+    second: Charging_99
+  - first:
+      213: -149559466879666450
+    second: Charging_100
+  - first:
+      213: 7497359755034406955
+    second: Charging_101
+  - first:
+      213: -3105852410247731050
+    second: Charging_102
+  - first:
+      213: 1459994371191360298
+    second: Charging_103
+  - first:
+      213: 8866476243136428766
+    second: Charging_104
+  - first:
+      213: 3725376319536656578
+    second: Charging_105
+  - first:
+      213: -862796787031512279
+    second: Charging_106
+  - first:
+      213: 7199321096157133652
+    second: Charging_107
+  - first:
+      213: 6029389843195624331
+    second: Charging_108
+  - first:
+      213: -1480673540020467497
+    second: Charging_109
+  - first:
+      213: -2781050579670708294
+    second: Charging_110
+  - first:
+      213: -5024428973155627619
+    second: Charging_111
+  - first:
+      213: 4478808781627998009
+    second: Charging_112
+  - first:
+      213: 1652666715617730587
+    second: Charging_113
+  - first:
+      213: -122133988382509383
+    second: Charging_114
+  - first:
+      213: -2227788128763612713
+    second: Charging_115
+  - first:
+      213: 6790884444712338588
+    second: Charging_116
+  - first:
+      213: 3467038433812317324
+    second: Charging_117
+  - first:
+      213: 758885099201362959
+    second: Charging_118
+  - first:
+      213: -2715606034275123416
+    second: Charging_119
+  - first:
+      213: 7105199707401389170
+    second: Charging_120
+  - first:
+      213: 2463500895276644215
+    second: Charging_121
+  - first:
+      213: 6836741125739559312
+    second: Charging_122
+  - first:
+      213: -1457514604558001712
+    second: Charging_123
+  - first:
+      213: -5198310165068258534
+    second: Charging_124
+  - first:
+      213: -8775030389072536546
+    second: Charging_125
+  - first:
+      213: 5342627718588785337
+    second: Charging_126
+  - first:
+      213: -2270373320300124145
+    second: Charging_127
+  - first:
+      213: -9200694231685980348
+    second: Charging_128
+  - first:
+      213: 2959539769990930678
+    second: Charging_129
+  - first:
+      213: 6971664171953139909
+    second: Charging_130
+  - first:
+      213: -1773578323177881344
+    second: Charging_131
+  - first:
+      213: 6170441391315495488
+    second: Charging_132
+  - first:
+      213: 1150348035237979617
+    second: Charging_133
+  - first:
+      213: 391182738183649863
+    second: Charging_134
+  - first:
+      213: -1723594219606902799
+    second: Charging_135
+  - first:
+      213: -7001821007967405540
+    second: Charging_136
+  - first:
+      213: -8751772261733806719
+    second: Charging_137
+  - first:
+      213: 2019539299803744439
+    second: Charging_138
+  - first:
+      213: -4999680939708618294
+    second: Charging_139
+  - first:
+      213: -3522709300553194408
+    second: Charging_140
+  - first:
+      213: -3410948276214436749
+    second: Charging_141
+  - first:
+      213: -6363025822189626854
+    second: Charging_142
+  - first:
+      213: 4680039022190993333
+    second: Charging_143
+  - first:
+      213: 1830169993119061350
+    second: Charging_144
+  - first:
+      213: 2417585794817100733
+    second: Charging_145
+  - first:
+      213: -6556430685575035103
+    second: Charging_146
+  - first:
+      213: 1362778093890823752
+    second: Charging_147
+  - first:
+      213: 401249523722656435
+    second: Charging_148
+  - first:
+      213: 252308839031979046
+    second: Charging_149
+  - first:
+      213: 8397480681196582157
+    second: Charging_150
+  - first:
+      213: 1793278670355535935
+    second: Charging_151
+  - first:
+      213: -3142818004109933634
+    second: Charging_152
+  - first:
+      213: -7517042030208188226
+    second: Charging_153
+  - first:
+      213: 7569966502646391527
+    second: Charging_154
+  - first:
+      213: -5067416272630484180
+    second: Charging_155
+  - first:
+      213: -922425501546072690
+    second: Charging_156
+  - first:
+      213: 3255801833996855515
+    second: Charging_157
+  - first:
+      213: 3423364527208424572
+    second: Charging_158
+  - first:
+      213: 3457698558635515986
+    second: Charging_159
+  - first:
+      213: -7166635538251559849
+    second: Charging_160
+  - first:
+      213: -8141672268874857334
+    second: Charging_161
+  - first:
+      213: 6352957756408948909
+    second: Charging_162
+  - first:
+      213: 1320510674621901778
+    second: Charging_163
+  - first:
+      213: -2239475961891791039
+    second: Charging_164
+  - first:
+      213: 2790316221882991470
+    second: Charging_165
+  - first:
+      213: -3513781654270814780
+    second: Charging_166
+  - first:
+      213: -565070758414523006
+    second: Charging_167
+  - first:
+      213: 7900469412993261620
+    second: Charging_168
+  - first:
+      213: 5757070169972551169
+    second: Charging_169
+  - first:
+      213: 8956384752096137857
+    second: Charging_170
+  - first:
+      213: -9088074836040558124
+    second: Charging_171
+  - first:
+      213: -2729251508061667313
+    second: Charging_172
+  - first:
+      213: 2258317138374465490
+    second: Charging_173
+  - first:
+      213: -6334999635943525266
+    second: Charging_174
+  - first:
+      213: 5034002099348965622
+    second: Charging_175
+  - first:
+      213: -261349509367193200
+    second: Charging_176
+  - first:
+      213: -447546556463317740
+    second: Charging_177
+  - first:
+      213: -1558760304795274868
+    second: Charging_178
+  - first:
+      213: -3091725040322510284
+    second: Charging_179
+  - first:
+      213: 4849458643107157719
+    second: Charging_180
+  - first:
+      213: -6498144320631328716
+    second: Charging_181
+  - first:
+      213: -6684157603274749062
+    second: Charging_182
+  - first:
+      213: -2314896992848212220
+    second: Charging_183
+  - first:
+      213: -9020461423234044214
+    second: Charging_184
+  - first:
+      213: 1503677488337479668
+    second: Charging_185
+  - first:
+      213: -4550795200267120446
+    second: Charging_186
+  - first:
+      213: 3948246328017542709
+    second: Charging_187
+  - first:
+      213: -6598240060118993510
+    second: Charging_188
+  - first:
+      213: 1957932252449827559
+    second: Charging_189
+  - first:
+      213: 3260572193923774127
+    second: Charging_190
+  - first:
+      213: -6397610793932971734
+    second: Charging_191
+  - first:
+      213: 8013981368581202590
+    second: Charging_192
+  - first:
+      213: -137860694084916896
+    second: Charging_193
+  - first:
+      213: 6782832210373204044
+    second: Charging_194
+  - first:
+      213: -5803831000192332045
+    second: Charging_195
+  - first:
+      213: -4577058679907460190
+    second: Charging_196
+  - first:
+      213: -165232533720201452
+    second: Charging_197
+  - first:
+      213: 4529016584426711276
+    second: Charging_198
+  - first:
+      213: -5916833005180081984
+    second: Charging_199
+  - first:
+      213: -2817445557551515401
+    second: Charging_200
+  - first:
+      213: 5727992511450325006
+    second: Charging_201
+  - first:
+      213: -7581028709925452794
+    second: Charging_202
+  - first:
+      213: 5166535491147683869
+    second: Charging_203
+  - first:
+      213: -91678898644639768
+    second: Charging_204
+  - first:
+      213: 2961184708876233354
+    second: Charging_205
+  - first:
+      213: -6832063951625030337
+    second: Charging_206
+  - first:
+      213: 3793475962877315300
+    second: Charging_207
+  - first:
+      213: 6746804908767003446
+    second: Charging_208
+  - first:
+      213: 6145880245933406483
+    second: Charging_209
+  - first:
+      213: 2163389637068882150
+    second: Charging_210
+  - first:
+      213: 6851679439122207363
+    second: Charging_211
+  - first:
+      213: -7919402572050859722
+    second: Charging_212
+  - first:
+      213: -3407269906740940375
+    second: Charging_213
+  - first:
+      213: 8199523327832889817
+    second: Charging_214
+  - first:
+      213: -6857470074339307051
+    second: Charging_215
+  - first:
+      213: 1878351071677194794
+    second: Charging_216
+  - first:
+      213: -3819989658177341813
+    second: Charging_217
+  - first:
+      213: 6984626799579692268
+    second: Charging_218
+  - first:
+      213: 781925438368326008
+    second: Charging_219
+  - first:
+      213: -5653025053356706470
+    second: Charging_220
+  - first:
+      213: 7387790567374281970
+    second: Charging_221
+  - first:
+      213: 492881826402721833
+    second: Charging_222
+  - first:
+      213: 8170568133816629799
+    second: Charging_223
+  - first:
+      213: 5403240514313409076
+    second: Charging_224
+  - first:
+      213: 813208617633845923
+    second: Charging_225
+  - first:
+      213: 3111037153516679394
+    second: Charging_226
+  - first:
+      213: -883007675641359895
+    second: Charging_227
+  - first:
+      213: 5017044030626409206
+    second: Charging_228
+  - first:
+      213: -4983775450821821238
+    second: Charging_229
+  - first:
+      213: 7732937558637356469
+    second: Charging_230
+  - first:
+      213: -5618452977764137763
+    second: Charging_231
+  - first:
+      213: -2859818556105211353
+    second: Charging_232
+  - first:
+      213: -8211594671083571941
+    second: Charging_233
+  - first:
+      213: -5195711618060667665
+    second: Charging_234
+  - first:
+      213: -5413380638555297341
+    second: Charging_235
+  - first:
+      213: -4873179712817135629
+    second: Charging_236
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Charging_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 650
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f053c940b369770800000000000000
+      internalID: 8617139828006653773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 644
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b20ccad0b64a150800000000000000
+      internalID: 5882944719729732422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 644
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fe626ec7a4104d0800000000000000
+      internalID: -3170170762394407167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 644
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddfb112a4d679790800000000000000
+      internalID: -7523424487348634149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_4
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 652
+        width: 77
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b731c2f1eaec19d40800000000000000
+      internalID: 5589475859786109819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b6733c6ae5b2210800000000000000
+      internalID: 1309244187014032174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 548
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e33b0ad1361d5630800000000000000
+      internalID: 3917311654249575401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_7
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 548
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac80a8216b9b02660800000000000000
+      internalID: 7359085982769613002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_8
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 548
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59087ac38c9705990800000000000000
+      internalID: -7399280286851694443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_9
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 548
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0e720a2bfe24090800000000000000
+      internalID: -8051609633314840401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b61ed2555259ef0800000000000000
+      internalID: -102134368773772498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_11
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 452
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c916f6c2d9f948f0800000000000000
+      internalID: -555638395327079999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_12
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 452
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d73db745302990a0800000000000000
+      internalID: -6874427942995413038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 452
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb9ab55d98a27b90800000000000000
+      internalID: -7245543456784081995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_14
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 452
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e18246a32cc5520800000000000000
+      internalID: 2692240233304956523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47c585add8009c40800000000000000
+      internalID: 5516919291586660172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 356
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f161216c9a90300800000000000000
+      internalID: 218892725076238087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_17
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 356
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e7ddffb97a49b60800000000000000
+      internalID: 7752005147065941589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_18
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 356
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86293e85a7360dd0800000000000000
+      internalID: -2520265757271972211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_19
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 356
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b3938fdedce48d0800000000000000
+      internalID: -2860122291378242741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5455b7ec69bfa950800000000000000
+      internalID: 6462587867694978143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_21
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 335
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e324aab06f49cfc0800000000000000
+      internalID: -3474158360672853023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_22
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 260
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f383fe72970198b90800000000000000
+      internalID: -7239236813474285505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_23
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 260
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0460b9524d2c116c0800000000000000
+      internalID: -4174341163175967168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_24
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 260
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ef041387ad0af30800000000000000
+      internalID: 4584904630420438565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad72aa9c1fa1c0d30800000000000000
+      internalID: 4398920561806944218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_26
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 174
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55da9db556d2a2260800000000000000
+      internalID: 7073516078094724437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_27
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 164
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed45a8630f3c9af90800000000000000
+      internalID: -6941801914140306210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_28
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 164
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6578dd319810a30800000000000000
+      internalID: 4179772647590549186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_29
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 164
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6419950c829742d0800000000000000
+      internalID: -3294503472311233427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a3c2a73989965b0800000000000000
+      internalID: -5374596921112642993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_31
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 68
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca465d40b3c5bf60800000000000000
+      internalID: 8049555070973790917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_32
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 68
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e9365b4011c0dc0800000000000000
+      internalID: -3671540884293050814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_33
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 68
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bf326faedc9b360800000000000000
+      internalID: 7186001089481931634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_34
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 68
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c9fde64c76f5c10800000000000000
+      internalID: 2044466849220893784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

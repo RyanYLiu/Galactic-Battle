@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634be867920f0f54dbccc00a121f92c8, type: 3}
+  m_Name: Red Ship Parts
+  m_EditorClassIdentifier: 
+  bodyUIPrefabs:
+  - {fileID: 1397677415808343960, guid: 5f89a5a362d078848a574e1fbcac7349, type: 3}
+  - {fileID: 7209925542581874758, guid: 7ffaa6341bb985b46a1504e39b9ba9b2, type: 3}
+  - {fileID: 8278838622488716817, guid: bed8de6a690167243b6ecea0b3b74853, type: 3}
+  - {fileID: 5315073325514233105, guid: 15b656f5d42492144a0b84370ab8aa51, type: 3}
+  - {fileID: 4903217557921187431, guid: 41c7d1ed072dea14b9db67b59921f236, type: 3}
+  - {fileID: 7437208943732171924, guid: 93f03f49ba0b90b41845808b42da1ed1, type: 3}
+  - {fileID: 3435995898714311785, guid: 543760fba8d299f4681daa594ca7400e, type: 3}
+  - {fileID: 9070843256229933588, guid: 50f0d668791b18146b531cba8408578a, type: 3}
+  wingUIPrefabs:
+  - {fileID: 8029988840462599262, guid: 8d42d528b2a54204a9a0bc49af54fb8b, type: 3}
+  - {fileID: 7999977550563593622, guid: edf7814ad6b0ae84781d8d0f8168309c, type: 3}
+  - {fileID: 4135877570877468096, guid: 683b0dbed76f73e4e9f19c77f3c091fe, type: 3}
+  - {fileID: 1729856466079535702, guid: 459fb38eff544974499d1d811a66475d, type: 3}
+  - {fileID: 2776837605211624315, guid: 816daa2b3e2eed447a91e9f37659bb11, type: 3}
+  - {fileID: 4343630926548088907, guid: b5db6e96f91ffad45bfb0b598d7eb3c7, type: 3}
+  - {fileID: 2323333422293980003, guid: 909852a732873764395d41fe5f93d83d, type: 3}
+  - {fileID: 826657872584894476, guid: b1e81285edb99554da525bc5955240c7, type: 3}
+  bodySpritePrefabs:
+  - {fileID: 4464659606610037997, guid: dd8b76b3504d8504e9da332db5fe68f8, type: 3}
+  - {fileID: 1011929280410146540, guid: a0f836f899542934b895f2b6800b7d66, type: 3}
+  - {fileID: 1705695170535400908, guid: 73214a479e63a1f4ba733ed1fdb0301b, type: 3}
+  - {fileID: 5316576898868846491, guid: 5e1576260257f9246acca1e4965a16ff, type: 3}
+  - {fileID: 6299851976640990904, guid: ae850e54f89560f4dba117fe636dfc8f, type: 3}
+  - {fileID: 4320054018308768619, guid: da28cc86a0b22694a8516262d177f9a9, type: 3}
+  - {fileID: 7823810439730681829, guid: 504e20ac5f1f5e7419e0ea38b6a4e7c9, type: 3}
+  - {fileID: 4951016973471034775, guid: ba65df1a208e7dc4babfda0dcfbc2136, type: 3}
+  wingSpritePrefabs:
+  - {fileID: 1925474717372731132, guid: 3eedbfac5f020814ea093e40a5426e78, type: 3}
+  - {fileID: 4645114913141842228, guid: 48a6b37dfbb4f8b40b10f8bd88b0b92a, type: 3}
+  - {fileID: 1830021106928139302, guid: 9624bde7f034c944ca8b9b26f178a1d7, type: 3}
+  - {fileID: 5956679109366370980, guid: 43fb831ea677e094ca6161915262a60a, type: 3}
+  - {fileID: 3482786408961948447, guid: f1d8adbb2c154ec4dbd64d97a4fbde34, type: 3}
+  - {fileID: 7542786398370376836, guid: c74f4c0c866512a42a778dcb6c1ff80d, type: 3}
+  - {fileID: 337371498230569096, guid: d9b64e94c977b7843913ad14b63ff08a, type: 3}
+  - {fileID: 2471825110042339518, guid: b533150f217407d4d9189c3bf74744f3, type: 3}
