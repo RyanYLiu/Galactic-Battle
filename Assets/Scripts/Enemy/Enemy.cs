@@ -93,4 +93,9 @@ public class Enemy : MonoBehaviour
         laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -projectileSpeed);
         AudioSource.PlayClipAtPoint(laserSound, Camera.main.transform.position, laserSoundVolume);
     }
+
+    public float GetHealth()
+    {
+        return health;
+    }
 }

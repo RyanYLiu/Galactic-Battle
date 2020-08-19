@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5159244883815288188}
   - component: {fileID: 5159244883815287427}
   - component: {fileID: 5159244883815288189}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Shredder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
