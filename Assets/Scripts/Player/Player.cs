@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     int maxLevel = 7;
     [SerializeField] List<AttackPatternConfig> attackLevelDetails;
     [SerializeField] float trackingFireDelay = 1f;
+    float trackingLockoutTimer;
 
     [Header("Sound Effects")]
     [SerializeField] AudioClip deathSound;

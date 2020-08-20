@@ -25,7 +25,7 @@ public class BossTurretRotatePattern : Enemy
         CountDownAndShoot();
     }
 
-    private void ResetShotCounter()
+    private new void ResetShotCounter()
     {
         shotCounter = maxTimeBetweenShots;
         firingAttack = false;

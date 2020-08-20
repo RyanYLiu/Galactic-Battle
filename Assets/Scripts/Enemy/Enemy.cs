@@ -18,8 +18,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected GameObject laserPrefab;
 
     [Header("Sound Effects")]
-    [SerializeField] AudioClip laserSound;
-    [Range(0,1)] [SerializeField] float laserSoundVolume = 0.2f;
+    [SerializeField] protected AudioClip laserSound;
+    [Range(0,1)] [SerializeField] protected float laserSoundVolume = 0.2f;
     [SerializeField] AudioClip deathSound;
     [Range(0,1)] [SerializeField] float deathSoundVolume = 0.2f;
 
@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void ResetShotCounter()
+    protected void ResetShotCounter()
     {
         shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
     }
