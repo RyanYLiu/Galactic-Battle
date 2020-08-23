@@ -41,7 +41,7 @@ public class EnemyPathing : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            waypointIndex = 0;
         }
     }
 }
