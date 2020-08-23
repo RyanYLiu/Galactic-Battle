@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackPowerup : MonoBehaviour
+public class AttackPowerup : Powerup
 {
     [SerializeField] int attackLevel = 1;
     [SerializeField] float fallSpeed = 5f;

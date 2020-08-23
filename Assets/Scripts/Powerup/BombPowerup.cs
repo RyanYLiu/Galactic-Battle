@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BombPowerup : MonoBehaviour
+public class BombPowerup : Powerup
 {
     [SerializeField] float fallSpeed = 5f;
     [SerializeField] AudioClip bombSound;

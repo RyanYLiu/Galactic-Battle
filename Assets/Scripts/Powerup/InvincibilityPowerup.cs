@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InvincibilityPowerup : MonoBehaviour
+public class InvincibilityPowerup : Powerup
 {
     [SerializeField] float iframeDuration = 10f;
     [SerializeField] float fallSpeed = 5f;

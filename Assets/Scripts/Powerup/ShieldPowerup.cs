@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShieldPowerup : MonoBehaviour
+public class ShieldPowerup : Powerup
 {
     [SerializeField] float fallSpeed = 5f;
     [SerializeField] AudioClip shieldsUpSound;
