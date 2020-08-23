@@ -18,6 +18,11 @@ public class BossStart : MonoBehaviour
     {
         if (transform.position == endPosition.position)
         {
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(true);
+            }
+            GetComponent<Boss>().enabled = true;
             GetComponent<BossStart>().enabled = false;
         }
         transform.position = Vector2.MoveTowards(transform.position, endPosition.position, moveSpeed);

@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathVFX;
     [SerializeField] float durationOfExplosion = 1f;
     [SerializeField] int pointValue = 100;
+    [SerializeField] float powerupDropRate = 0.3f;
+    [SerializeField] List<Powerup> powerupList;
 
     [Header("Projectile")]
     [SerializeField] protected float projectileSpeed = 10f;
@@ -63,6 +65,10 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         FindObjectOfType<GameSession>().AddToScore(pointValue);
+        if (Random.Range(0f, 1f) < powerupDropRate)
+        {
+            Instantiate(powerupList[Random.Range(0, powerupList.Count)], transform.position, Quaternion.identity);
+        }
         Destroy(gameObject);
         GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
         Destroy(explosion, durationOfExplosion);
