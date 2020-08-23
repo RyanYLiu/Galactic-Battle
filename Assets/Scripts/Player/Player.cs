@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     // config params
     [Header("Player")]
     [SerializeField] float moveSpeed = 10f;
+    [SerializeField] float focusMoveSpeed = 3f;
+    [SerializeField] float normalMoveSpeed = 10f;
     [SerializeField] float padding = 1f;
     [SerializeField] int lifeCount = 3;
     [SerializeField] int maxLifeCount = 3;
@@ -49,6 +51,7 @@ public class Player : MonoBehaviour
     BombDisplay bombDisplay;
     Respawner respawner;
     Collider2D myCollider;
+    SpriteRenderer hitBox;
 
     float xMin;
     float xMax;
@@ -62,6 +65,7 @@ public class Player : MonoBehaviour
         SetUpMoveBoundaries();
         SetupPlayerUI();
         myCollider = GetComponent<Collider2D>();
+        hitBox = GetComponent<SpriteRenderer>();
     }
 
     public void SetupPlayerUI()
@@ -91,6 +95,7 @@ public class Player : MonoBehaviour
     {
         if (IsGameScene())
         {
+            Focus();
             Move();
             Fire();
             UseBomb();
@@ -122,6 +127,12 @@ public class Player : MonoBehaviour
             {
                 ProcessHit(damageDealer);
             }
+            
+            if (other.GetComponent<BossLaser>())
+            {
+                return;
+            }
+            
             damageDealer.Hit();
         }
         else if (shieldPowerup)
@@ -188,6 +199,8 @@ public class Player : MonoBehaviour
                 ClearScreen();
                 attackLevel = Mathf.Clamp(attackLevel - 1, 0, maxLevel);
                 respawner.StartRespawn();
+                hitBox.enabled = false;
+                moveSpeed = normalMoveSpeed;
                 gameObject.SetActive(false);
             }
         }
@@ -315,8 +328,8 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        var deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        var deltaY = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+        var deltaX = Input.GetAxisRaw("Horizontal") * Time.deltaTime * moveSpeed;
+        var deltaY = Input.GetAxisRaw("Vertical") * Time.deltaTime * moveSpeed;
         var newXPos = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
         var newYPos = Mathf.Clamp(transform.position.y + deltaY, yMin, yMax);
         transform.position = new Vector2(newXPos, newYPos);
@@ -329,6 +342,20 @@ public class Player : MonoBehaviour
         xMax = gameCamera.ViewportToWorldPoint(new Vector3(1,0,0)).x - padding;
         yMin = gameCamera.ViewportToWorldPoint(new Vector3(0,0,0)).y + padding;
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0,1,0)).y - padding;
+    }
+
+    private void Focus()
+    {
+        if (Input.GetButtonDown("Fire2"))
+        {
+            hitBox.enabled = true;
+            moveSpeed = focusMoveSpeed;
+        }
+        else if (Input.GetButtonUp("Fire2"))
+        {
+            hitBox.enabled = false;
+            moveSpeed = normalMoveSpeed;
+        }
     }
 
     public int GetLife()

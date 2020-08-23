@@ -7,7 +7,7 @@ public class Warning : MonoBehaviour
 {
     [SerializeField] float opacityIncrement = 0.01f;
     [SerializeField] float maxOpacity = 0.6f;
-    Boss boss;
+    BossSpawner bossSpawner;
     int numFlashes = 3;
     bool increaseOpacity = true;
     Image backgroundColor;
@@ -17,7 +17,7 @@ public class Warning : MonoBehaviour
     void Start()
     {
         backgroundColor = GetComponent<Image>();
-        boss = FindObjectOfType<Boss>();
+        bossSpawner = FindObjectOfType<BossSpawner>();
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class Warning : MonoBehaviour
         if (flashCounter >= numFlashes)
         {
             transform.GetChild(0).gameObject.SetActive(false);
-            boss.GetComponent<BossStart>().enabled = true;
+            bossSpawner.GetComponent<BossSpawner>().SpawnBoss();
             GetComponent<Warning>().enabled = false;
         }
     }
