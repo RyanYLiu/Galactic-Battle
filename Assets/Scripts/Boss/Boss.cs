@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class Boss : MonoBehaviour
     Transform leftWaypoint;
     Transform rightWaypoint;
     Transform endpoint;
+    Pauser pauser;
+    float moveDelayTimer = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,11 +25,13 @@ public class Boss : MonoBehaviour
         leftWaypoint = path.GetChild(0);
         rightWaypoint = path.GetChild(1);
         endpoint = leftWaypoint;
+        pauser = FindObjectOfType<Pauser>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (pauser.IsPaused()) { return; }
         Move();
     }
 
@@ -34,24 +39,33 @@ public class Boss : MonoBehaviour
     {
         if (transform.position == leftWaypoint.position)
         {
-            StartCoroutine(MoveDelay(rightWaypoint));
+            MoveDelayCheck(rightWaypoint);
         }
         else if (transform.position == rightWaypoint.position)
         {
-            StartCoroutine(MoveDelay(leftWaypoint));
+            MoveDelayCheck(leftWaypoint);
         }
 
         transform.position = Vector2.MoveTowards(transform.position, endpoint.position, moveSpeed);
     }
 
+    private void MoveDelayCheck(Transform endPos)
+    {
+        moveDelayTimer += Time.deltaTime;
+        if (moveDelayTimer >= moveDelayTime)
+        {
+            endpoint = endPos;
+            ResetMoveDelayTimer();
+        }
+    }
+
+    private void ResetMoveDelayTimer()
+    {
+        moveDelayTimer = 0;
+    }
+
     private void Die()
     {
 
-    }
-
-    IEnumerator MoveDelay(Transform waypoint)
-    {
-        yield return new WaitForSeconds(moveDelayTime);
-        endpoint = waypoint;
     }
 }

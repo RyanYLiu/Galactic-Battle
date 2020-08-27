@@ -12,17 +12,21 @@ public class Warning : MonoBehaviour
     bool increaseOpacity = true;
     Image backgroundColor;
     int flashCounter = 0;
+    Pauser pauser;
 
     // Start is called before the first frame update
     void Start()
     {
         backgroundColor = GetComponent<Image>();
         bossSpawner = FindObjectOfType<BossSpawner>();
+        pauser = FindObjectOfType<Pauser>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (pauser.IsPaused()) { return; }
+
         FlashScreen();
         if (flashCounter >= numFlashes)
         {

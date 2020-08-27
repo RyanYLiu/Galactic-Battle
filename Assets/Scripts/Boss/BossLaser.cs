@@ -53,7 +53,6 @@ public class BossLaser : MonoBehaviour
     IEnumerator FinalCharge()
     {
         animator.enabled = true;
-        // animator.SetBool("fireLaser", false);
         AudioSource.PlayClipAtPoint(laserChargeSound, Camera.main.transform.position, laserChargeSoundVolume);
         yield return new WaitForSeconds(delayBeforeFiring);
         StartCoroutine(FireLaser());

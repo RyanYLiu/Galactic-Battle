@@ -17,10 +17,12 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] int minWavesBeforeBoss = 5;
     [SerializeField] float chanceToSpawnBoss = 0f;
     [SerializeField] float bossChanceIncrement = 0.05f;
+    Pauser pauser;
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
+        pauser = FindObjectOfType<Pauser>();
         do
         {
             yield return StartCoroutine(SpawnAllWaves());
@@ -30,6 +32,8 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
+        if (pauser.IsPaused()) { return; }
+        
         if (stopSpawning)
         {
             if (FindObjectsOfType<Enemy>().Length == 0)
@@ -87,6 +91,10 @@ public class EnemySpawner : MonoBehaviour
                 Quaternion.identity);
             newEnemy.GetComponent<EnemyPathing>().SetWaveConfig(waveConfig);    // so we don't have to add config manually per enemy
             yield return new WaitForSeconds(waveConfig.GetTimeBetweenSpawns());
+            while (pauser.IsPaused())
+            {
+                yield return null;
+            }
         }
     }
 }
