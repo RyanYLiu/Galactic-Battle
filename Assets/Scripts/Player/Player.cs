@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     [Range(0,1)] [SerializeField] float bombUseSoundVolume = 0.05f;
     [SerializeField] AudioClip iframePowerupSound;
     [Range(0,1)] [SerializeField] float iframePowerupSoundVolume = 0.05f;
-
+    Pauser pauser;
 
 
     GameObject shieldVFX;
@@ -48,10 +48,10 @@ public class Player : MonoBehaviour
     Coroutine trackingProjectileCoroutine;
     LifeDisplay lifeDisplay;
     ShieldDisplay shieldDisplay;
-    BombDisplay bombDisplay;
     Respawner respawner;
     Collider2D myCollider;
     SpriteRenderer hitBox;
+    PlayerBombs bombs;
 
     float xMin;
     float xMax;
@@ -63,7 +63,8 @@ public class Player : MonoBehaviour
     {
         SetupSingleton();
         SetUpMoveBoundaries();
-        SetupPlayerUI();
+        bombs = GetComponent<PlayerBombs>();
+        // SceneManager.sceneLoaded += WaitForGame;
         myCollider = GetComponent<Collider2D>();
         hitBox = GetComponent<SpriteRenderer>();
     }
@@ -72,8 +73,8 @@ public class Player : MonoBehaviour
     {
         lifeDisplay = FindObjectOfType<LifeDisplay>();
         shieldDisplay = FindObjectOfType<ShieldDisplay>();
-        bombDisplay = FindObjectOfType<BombDisplay>();
         respawner = FindObjectOfType<Respawner>();
+        pauser = FindObjectOfType<Pauser>();
     }
 
     private void SetupSingleton()
@@ -98,15 +99,6 @@ public class Player : MonoBehaviour
             Focus();
             Move();
             Fire();
-            UseBomb();
-        }
-    }
-
-    void OnEnable()
-    {
-        if (!IsGameScene())
-        {
-            StartCoroutine(WaitForGame());
         }
     }
 
@@ -169,11 +161,15 @@ public class Player : MonoBehaviour
         Destroy(iframeSparkles.gameObject);
     }
 
-    private IEnumerator WaitForGame()
-    {
-        yield return new WaitUntil(() => SceneManager.GetActiveScene().name == "Game");
-        ResetPlayer();
-    }
+    // private void WaitForGame(Scene scene, LoadSceneMode mode)
+    // {
+    //     if (IsGameScene())
+    //     {
+    //         Debug.Log("delegate waitforgame");
+    //         ResetPlayer();
+    //         SceneManager.sceneLoaded -= WaitForGame;
+    //     }
+    // }
 
     private void ProcessHit(DamageDealer damageDealer)
     {
@@ -196,7 +192,7 @@ public class Player : MonoBehaviour
             else
             {
                 PlayExplosionVFX();
-                ClearScreen();
+                bombs.ClearScreen();
                 attackLevel = Mathf.Clamp(attackLevel - 1, 0, maxLevel);
                 respawner.StartRespawn();
                 hitBox.enabled = false;
@@ -214,37 +210,11 @@ public class Player : MonoBehaviour
         invincible = false;
         attackLevel = 1;
         SetupPlayerUI();
-        for (int bombCounter = 0; bombCounter < bombCount; bombCounter++)
-        {
-            bombDisplay.AddBomb();
-        }
-
         for (int lifeCounter = 0; lifeCounter < lifeCount; lifeCounter++)
         {
             lifeDisplay.AddLife();
         }
         transform.position = respawner.transform.position;
-    }
-
-    private void ClearScreen()
-    {
-        GameObject[] allEnemyProjectiles = GameObject.FindGameObjectsWithTag("Enemy Projectile");
-        foreach (GameObject projectile in allEnemyProjectiles)
-        {
-            Destroy(projectile);
-        }
-    }
-
-    private void UseBomb()
-    {
-        if (Input.GetButtonDown("Fire3") && bombCount > 0)
-        {
-            // TODO: Bomb VFX
-            PlaySFX(bombUseSound, bombUseSoundVolume);
-            ClearScreen();
-            bombCount -= 1;
-            bombDisplay.RemoveBomb();
-        }
     }
 
     private void LevelUpAttack(AttackPowerup attackPowerup)
@@ -255,6 +225,7 @@ public class Player : MonoBehaviour
     private void Die()
     {
         PlayExplosionVFX();
+        // SceneManager.sceneLoaded += WaitForGame;
         gameObject.SetActive(false);
         FindObjectOfType<Level>().LoadGameOver();
     }

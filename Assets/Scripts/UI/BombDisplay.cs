@@ -6,13 +6,7 @@ using UnityEngine.UI;
 public class BombDisplay : MonoBehaviour
 {
     [SerializeField] Image bombSprite;
-    [SerializeField] float spriteOffset = 10f;
-    Vector3 offset;
-    // Start is called before the first frame update
-    void Start()
-    {
-        offset = new Vector3(0, -spriteOffset, 0);
-    }
+    [SerializeField] Vector3 offset = new Vector3(0, -30, 0);
 
     public void AddBomb()
     {
