@@ -13,9 +13,11 @@ public class PlayerBombs : MonoBehaviour
     [Header("Sound Effects")]
     [SerializeField] AudioClip bombUseSound;
     [Range(0,1)] [SerializeField] float bombUseSoundVolume = 0.05f;
+    Player player;
 
     private void OnEnable()
     {
+        player = GetComponent<Player>();
         bombCount = maxBombCount;
         bombDisplay = FindObjectOfType<BombDisplay>();
         pauser = FindObjectOfType<Pauser>();
@@ -28,7 +30,21 @@ public class PlayerBombs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (pauser.IsPaused() || player.GetRespawnStatus()) { return; }
         UseBomb();
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        BombPowerup bombPowerup = other.GetComponent<BombPowerup>();
+        if (bombPowerup)
+        {
+            if (bombCount < maxBombCount)
+            {
+                bombDisplay.AddBomb();
+            }
+            bombCount = Mathf.Clamp(bombCount + 1, 0, maxBombCount);
+        }
     }
 
     private void UseBomb()

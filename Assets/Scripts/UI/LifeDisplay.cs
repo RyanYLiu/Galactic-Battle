@@ -6,14 +6,7 @@ using UnityEngine.UI;
 public class LifeDisplay : MonoBehaviour
 {
     [SerializeField] Image healthSprite;
-    [SerializeField] float spriteOffset = 10f;
-    Vector3 offset;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        offset = new Vector3(spriteOffset, 0, 0);
-    }
+    [SerializeField] Vector3 offset = new Vector3(50, 0, 0);
 
     public void AddLife()
     {

@@ -247,6 +247,12 @@ GameObject:
   - component: {fileID: 8360769769105263527}
   - component: {fileID: 8360769769105263524}
   - component: {fileID: 1149603031}
+  - component: {fileID: 5850580813719653060}
+  - component: {fileID: -6008160875925979521}
+  - component: {fileID: -6709683659871330815}
+  - component: {fileID: 3764509222347309000}
+  - component: {fileID: -6379556196135859247}
+  - component: {fileID: 1002864002490627500}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -304,45 +310,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39fbc70d94a1624197fe030e4d5d267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  focusMoveSpeed: 3
-  normalMoveSpeed: 10
-  padding: 0.8
   lifeCount: 3
   maxLifeCount: 3
   deathVFX: {fileID: 6406023684439981936, guid: 5b6ee34158335d5499a1672307bdeb0e,
     type: 3}
   durationOfExplosion: 1
-  shield: 0
-  bombCount: 2
-  maxBombCount: 3
-  iframeVFX: {fileID: 2180039879185487394, guid: 9b6817fc7a9d3db428f35e1715ff661f,
+  invincibilityVFX: {fileID: 2180039879185487394, guid: 9b6817fc7a9d3db428f35e1715ff661f,
     type: 3}
-  iframeDuration: 2
-  shieldSprite: {fileID: 2577336859652466357, guid: 597bcdca7481fc94a84de99e34dc3a8c,
-    type: 3}
-  shieldOffset: 0.3
-  attackLevel: 1
-  attackLevelDetails:
-  - {fileID: 11400000, guid: 6c7e3a0451a8502498dcebafc14d5a78, type: 2}
-  - {fileID: 11400000, guid: 2d93e843fea470b49a80e3babdb0f7fc, type: 2}
-  - {fileID: 11400000, guid: 0a0131bf48ca7d647b157c9cb2920f3f, type: 2}
-  - {fileID: 11400000, guid: 2cae824104751f54b974530c149c3725, type: 2}
-  - {fileID: 11400000, guid: cb4c8c67f4b3b1d448a51f9a2f268c90, type: 2}
-  - {fileID: 11400000, guid: b3eb5e9d1ddb2b84884f5fcb91b4e70c, type: 2}
-  - {fileID: 11400000, guid: 44da1db5b3508304399084e39ad9afd1, type: 2}
-  - {fileID: 11400000, guid: ef6a0144dbbde5b42b809b5fab2f2758, type: 2}
-  trackingFireDelay: 1
+  invincibilityDuration: 2
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
   deathSoundVolume: 0.058
-  laserSound: {fileID: 8300000, guid: 4497c8e3b5306204291bd44f6c6ee383, type: 3}
-  laserSoundVolume: 0.045
-  shieldsDownSound: {fileID: 8300000, guid: 6853532913d761d4c887680dc716ac0d, type: 3}
-  shieldsDownSoundVolume: 0.07
-  bombUseSound: {fileID: 8300000, guid: f9208efdcde36f946ba2c032c5733d9e, type: 3}
-  bombUseSoundVolume: 0.05
-  iframePowerupSound: {fileID: 0}
-  iframePowerupSoundVolume: 0.05
 --- !u!212 &1149603031
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -393,6 +370,107 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5850580813719653060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8360769769105263522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0b4ab2a9a2fa64c9fea2c6387a2f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  defaultMoveSpeed: 10
+  padding: 0.8
+--- !u!114 &-6008160875925979521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8360769769105263522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8c56906c730e341a5dfd921ed7370f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombCount: 3
+  maxBombCount: 3
+  bombUseSound: {fileID: 8300000, guid: f9208efdcde36f946ba2c032c5733d9e, type: 3}
+  bombUseSoundVolume: 0.05
+--- !u!114 &-6709683659871330815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8360769769105263522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3e2a138ac508c49b6c32703e0b462a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusMoveSpeed: 3
+--- !u!114 &3764509222347309000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8360769769105263522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c20088f00bd25498c3da54d7351eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserSound: {fileID: 8300000, guid: 4497c8e3b5306204291bd44f6c6ee383, type: 3}
+  laserSoundVolume: 0.057
+  attackLevel: 1
+  attackLevelDetails:
+  - {fileID: 11400000, guid: 6c7e3a0451a8502498dcebafc14d5a78, type: 2}
+  - {fileID: 11400000, guid: 2d93e843fea470b49a80e3babdb0f7fc, type: 2}
+  - {fileID: 11400000, guid: 0a0131bf48ca7d647b157c9cb2920f3f, type: 2}
+  - {fileID: 11400000, guid: 2cae824104751f54b974530c149c3725, type: 2}
+  - {fileID: 11400000, guid: cb4c8c67f4b3b1d448a51f9a2f268c90, type: 2}
+  - {fileID: 11400000, guid: b3eb5e9d1ddb2b84884f5fcb91b4e70c, type: 2}
+  - {fileID: 11400000, guid: 44da1db5b3508304399084e39ad9afd1, type: 2}
+  - {fileID: 11400000, guid: ef6a0144dbbde5b42b809b5fab2f2758, type: 2}
+  trackingFireDelay: 1
+--- !u!114 &-6379556196135859247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8360769769105263522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0304621dccdfd4540a6732b5cc0d818b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeCount: 3
+  maxLifeCount: 3
+--- !u!114 &1002864002490627500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8360769769105263522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0fa1f0635f010429647bb683fc10a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shield: 0
+  shieldSprite: {fileID: 2577336859652466357, guid: 597bcdca7481fc94a84de99e34dc3a8c,
+    type: 3}
+  shieldOffset: 0.2
+  shieldsDownSound: {fileID: 8300000, guid: 6853532913d761d4c887680dc716ac0d, type: 3}
+  shieldsDownSoundVolume: 0.05
 --- !u!1 &8360769769229087762
 GameObject:
   m_ObjectHideFlags: 0

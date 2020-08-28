@@ -143,4 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad501059d30f0e34b87fd90721606622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iframeDuration: 5
+  duration: 10
+  fallSpeed: 5
+  invincibilityPowerupSound: {fileID: 8300000, guid: c0674c2b9bdea9d4fb0e3e6bd06b858c,
+    type: 3}
+  invincibilityPowerupSoundVolume: 0.05

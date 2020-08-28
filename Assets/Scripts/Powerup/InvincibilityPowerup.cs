@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class InvincibilityPowerup : Powerup
 {
-    [SerializeField] float iframeDuration = 10f;
+    [SerializeField] float duration = 10f;
     [SerializeField] float fallSpeed = 5f;
+    [SerializeField] AudioClip invincibilityPowerupSound;
+    [Range(0,1)] [SerializeField] float invincibilityPowerupSoundVolume = 0.05f;
 
     void Start()
     {
@@ -14,11 +16,15 @@ public class InvincibilityPowerup : Powerup
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Player player = other.GetComponent<Player>();
-        if (player)
+        if (other.GetComponent<Player>())
         {
-            player.StartIframes(iframeDuration);
+            AudioSource.PlayClipAtPoint(invincibilityPowerupSound, Camera.main.transform.position, invincibilityPowerupSoundVolume);
         }
         Destroy(gameObject);
+    }
+
+    public float GetDuration()
+    {
+        return duration;
     }
 }

@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallSpeed: 5
-  getBombSound: {fileID: 8300000, guid: c0674c2b9bdea9d4fb0e3e6bd06b858c, type: 3}
-  getBombSoundVolume: 0.05
+  bombSound: {fileID: 8300000, guid: c0674c2b9bdea9d4fb0e3e6bd06b858c, type: 3}
+  bombSoundVolume: 0.05
 --- !u!50 &2024361417
 Rigidbody2D:
   serializedVersion: 4
