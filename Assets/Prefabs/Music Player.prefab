@@ -140,3 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11396f3b2a891db40a5e0a5ec0e1a18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossMusic: {fileID: 8300000, guid: 1a0522beb182d0647a335d8e614b1d06, type: 3}
+  defeatMusic: {fileID: 8300000, guid: a6cce6dc00ae3bb4786622e1ff1b6ef5, type: 3}
+  victoryMusic: {fileID: 8300000, guid: 1bb2b369f1eb8d14e972c9995036d91d, type: 3}

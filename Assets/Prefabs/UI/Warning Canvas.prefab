@@ -189,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   opacityIncrement: 0.006
   maxOpacity: 0.6
+  pauser: {fileID: 9115408653205494024, guid: 4925065ba3b22624692d5bedf6a616f2, type: 3}
 --- !u!1 &6572258957788462106
 GameObject:
   m_ObjectHideFlags: 0

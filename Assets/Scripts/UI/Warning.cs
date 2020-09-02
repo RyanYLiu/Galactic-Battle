@@ -13,6 +13,9 @@ public class Warning : MonoBehaviour
     Image backgroundColor;
     int flashCounter = 0;
     Pauser pauser;
+    MusicPlayer music;
+    [SerializeField] AudioClip warningSound;
+    [SerializeField] float warningSoundVolume = 0.05f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +23,8 @@ public class Warning : MonoBehaviour
         backgroundColor = GetComponent<Image>();
         bossSpawner = FindObjectOfType<BossSpawner>();
         pauser = FindObjectOfType<Pauser>();
+        music = FindObjectOfType<MusicPlayer>();
+        music.PauseMusic();
     }
 
     // Update is called once per frame
@@ -45,6 +50,7 @@ public class Warning : MonoBehaviour
             if (color.a >= maxOpacity)
             {
                 increaseOpacity = false;
+                AudioSource.PlayClipAtPoint(warningSound, Camera.main.transform.position, warningSoundVolume);
             }
         }
         else
