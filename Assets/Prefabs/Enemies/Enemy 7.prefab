@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2025765064240115590}
   - component: {fileID: 2025765064240115591}
   - component: {fileID: 1604898032345764313}
-  - component: {fileID: -2694988076761504607}
   - component: {fileID: -7561320123189820580}
   - component: {fileID: 5036997771552750097}
   - component: {fileID: -2828454619478603713}
@@ -99,32 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc16212ea8a91345b59a585ba49ed28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-2694988076761504607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025765064240115584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7660e189c6fb8eb43aaaba790ed8aca1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5
-  deathVFX: {fileID: 6406023684439981936, guid: af41ae38c45f60e4c80b4c0800b8fdd9,
-    type: 3}
-  durationOfExplosion: 0.25
-  pointValue: 100
-  projectileSpeed: 7
-  minTimeBetweenShots: 0.3
-  maxTimeBetweenShots: 2
-  laserPrefab: {fileID: 3121831531004721960, guid: 6f6dabf7c82d03041b2e31a33d7097d3,
-    type: 3}
-  laserSound: {fileID: 8300000, guid: 76730af981fca804c80ef2629aaa4eda, type: 3}
-  laserSoundVolume: 0.143
-  deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.102
 --- !u!114 &-7561320123189820580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,18 +160,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb5f51c89898794299a1ff5d5a07d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
+  baseHealth: 3
   deathVFX: {fileID: 6406023684439981936, guid: af41ae38c45f60e4c80b4c0800b8fdd9,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  projectileSpeed: 10
-  minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 3
-  laserPrefab: {fileID: 3121831531004721960, guid: 0433db2e1b689a24db5bde837e9d8c0e,
+  powerupDropRate: 0.1
+  powerupList:
+  - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
+  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
+  - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
+  - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
+  - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
+  projectileSpeed: 8
+  minTimeBetweenShots: 0.3
+  maxTimeBetweenShots: 2
+  laserPrefab: {fileID: 3121831531004721960, guid: 2b397e2fa6c251342a37ee62f88acaf8,
     type: 3}
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.059
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.097
+  deathSoundVolume: 0.052
   spread: 3

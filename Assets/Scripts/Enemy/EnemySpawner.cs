@@ -18,16 +18,21 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float chanceToSpawnBoss = 0f;
     [SerializeField] float bossChanceIncrement = 0.05f;
     Pauser pauser;
+    bool spawning = false;
 
     // Start is called before the first frame update
-    IEnumerator Start()
+    // IEnumerator Start()
+    // {
+    //     do
+    //     {
+    //         yield return StartCoroutine(SpawnAllWaves());
+    //     }
+    //     while (looping);
+    // }
+
+    void Start()
     {
         pauser = FindObjectOfType<Pauser>();
-        do
-        {
-            yield return StartCoroutine(SpawnAllWaves());
-        }
-        while (looping);
     }
 
     void Update()
@@ -45,10 +50,10 @@ public class EnemySpawner : MonoBehaviour
         else
         {
             spawnTimer -= Time.deltaTime;
-            if (spawnTimer <= 0)
+            if (spawnTimer <= 0 && !spawning)
             {
+                spawning = true;
                 SpawnWave(Random.Range(0, waveConfigs.Count - 1));
-                ResetSpawnTimer();
                 numWavesSpawned += 1;
                 if (numWavesSpawned > minWavesBeforeBoss)
                 {
@@ -65,6 +70,7 @@ public class EnemySpawner : MonoBehaviour
     private void ResetSpawnTimer()
     {
         spawnTimer = Random.Range(minRandomSpawnTime, maxRandomSpawnTime);
+        spawning = false;
     }
 
     private IEnumerator SpawnAllWaves()
@@ -96,5 +102,6 @@ public class EnemySpawner : MonoBehaviour
                 yield return null;
             }
         }
+        ResetSpawnTimer();
     }
 }

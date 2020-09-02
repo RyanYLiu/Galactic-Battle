@@ -7,11 +7,14 @@ public class BossStart : MonoBehaviour
     [SerializeField] Transform endPosition;
     [SerializeField] float moveSpeed = 10f;
     Pauser pauser;
+    MusicPlayer music;
 
     // Start is called before the first frame update
     void Start()
     {
         pauser = FindObjectOfType<Pauser>();
+        music = FindObjectOfType<MusicPlayer>();
+        music.PlayBossMusic();
     }
 
     // Update is called once per frame

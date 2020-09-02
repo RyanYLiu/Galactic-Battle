@@ -50,3 +50,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a8065c1fee260e44bb6c5496dcd04de4, type: 2}
   startingWave: 0
   looping: 1
+  numLoops: 3
+  spawnTimer: 60
+  maxRandomSpawnTime: 60
+  minRandomSpawnTime: 30
+  warningCanvas: {fileID: 6572258956166011510, guid: 7e1c644bc0efbad43bc235e920b25a85,
+    type: 3}
+  minWavesBeforeBoss: 5
+  chanceToSpawnBoss: 0
+  bossChanceIncrement: 0.05
+  pauser: {fileID: 9115408653205494024, guid: 4925065ba3b22624692d5bedf6a616f2, type: 3}

@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7660e189c6fb8eb43aaaba790ed8aca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  baseHealth: 3
   deathVFX: {fileID: 6406023684439981936, guid: af41ae38c45f60e4c80b4c0800b8fdd9,
     type: 3}
   durationOfExplosion: 0.25
@@ -122,15 +122,15 @@ MonoBehaviour:
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
-  projectileSpeed: 10
-  minTimeBetweenShots: 0.2
+  projectileSpeed: 7
+  minTimeBetweenShots: 0.3
   maxTimeBetweenShots: 1
   laserPrefab: {fileID: 3121831531004721960, guid: 7ec6f046f4df0f64088ddbc51554fa24,
     type: 3}
   laserSound: {fileID: 8300000, guid: 76730af981fca804c80ef2629aaa4eda, type: 3}
-  laserSoundVolume: 0.128
+  laserSoundVolume: 0.048
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.102
+  deathSoundVolume: 0.053
 --- !u!114 &-4958386947742506319
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: -720
+  pauser: {fileID: 9115408653205494024, guid: 4925065ba3b22624692d5bedf6a616f2, type: 3}
 --- !u!58 &7764646211698644648
 CircleCollider2D:
   m_ObjectHideFlags: 0

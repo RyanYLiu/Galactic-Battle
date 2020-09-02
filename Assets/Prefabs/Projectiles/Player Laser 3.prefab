@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 720
+  pauser: {fileID: 9115408653205494024, guid: 4925065ba3b22624692d5bedf6a616f2, type: 3}
 --- !u!114 &8388653842798285797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackSpeed: 10
+  pauser: {fileID: 0}
 --- !u!58 &6165608029748883095
 CircleCollider2D:
   m_ObjectHideFlags: 0

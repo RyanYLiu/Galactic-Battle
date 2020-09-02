@@ -150,5 +150,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   frequency: 2
-  magnitude: 1
   axis: {x: 0, y: 0, z: 0}
+  pauser: {fileID: 9115408653205494024, guid: 4925065ba3b22624692d5bedf6a616f2, type: 3}

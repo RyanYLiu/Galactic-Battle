@@ -62,12 +62,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206e0dce7921e8242818d27fe32bab7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -82,7 +82,7 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.2
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.2
+  deathSoundVolume: 0.107
   numPulses: 10
   timeBetweenPulses: 0.1
   rotationEndpoints: {fileID: 488755051}
@@ -148,12 +148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605e3388caa985b4abb7429853aeb11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList: []
   projectileSpeed: 10
   minTimeBetweenShots: 0.2
@@ -253,12 +253,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7660e189c6fb8eb43aaaba790ed8aca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -319,12 +319,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b65d5243aad42d4b8b63d4b3248d626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -433,12 +433,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7660e189c6fb8eb43aaaba790ed8aca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -545,12 +545,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ce8389f177670478816a273cd6098b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -558,8 +558,8 @@ MonoBehaviour:
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
   projectileSpeed: 10
-  minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 3
+  minTimeBetweenShots: 2
+  maxTimeBetweenShots: 2
   laserPrefab: {fileID: 3121831531004721960, guid: 0433db2e1b689a24db5bde837e9d8c0e,
     type: 3}
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
@@ -567,7 +567,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
   deathSoundVolume: 0.067
   numPulses: 5
-  timeBetweenPulses: 1
+  timeBetweenPulses: 0.01
   firingDirections: {fileID: 1026193717}
 --- !u!1 &1320876478
 GameObject:
@@ -717,9 +717,9 @@ MonoBehaviour:
   timeBetweenShots: 10
   delayBeforeFiring: 3
   laserSound: {fileID: 8300000, guid: 9a3b1a10d8e147a4ea1adf431fa7c7b9, type: 3}
-  laserSoundVolume: 0.107
+  laserSoundVolume: 0.07
   laserChargeSound: {fileID: 8300000, guid: 0702502e3c9896444805b657c319a96d, type: 3}
-  laserChargeSoundVolume: 0.108
+  laserChargeSoundVolume: 0.075
 --- !u!114 &1320876484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,12 +815,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd485941eec50264189f424a97546b9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -901,12 +901,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206e0dce7921e8242818d27fe32bab7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -987,12 +987,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd485941eec50264189f424a97546b9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -1072,12 +1072,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ce8389f177670478816a273cd6098b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -1141,12 +1141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b65d5243aad42d4b8b63d4b3248d626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  deathVFX: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+  baseHealth: 30
+  deathVFX: {fileID: 6406023684439981936, guid: bd9e756fbcf958646b70d08729bd662a,
     type: 3}
   durationOfExplosion: 1
   pointValue: 100
-  powerupDropRate: 0.3
+  powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
   - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
@@ -1304,6 +1304,8 @@ MonoBehaviour:
   path: {fileID: 8375203518933885237, guid: e4c39f0343682c346b94a136f35abb2d, type: 3}
   moveDelayTime: 3
   moveSpeed: 0.02
+  deathExplosion: {fileID: 6406023684439981936, guid: dec45d290f2964d49928f6e13ba1ee89,
+    type: 3}
 --- !u!114 &831082542
 MonoBehaviour:
   m_ObjectHideFlags: 0
