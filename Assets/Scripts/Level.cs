@@ -15,12 +15,14 @@ public class Level : MonoBehaviour
     private IEnumerator DelayGameOverLoad()
     {
         yield return new WaitForSeconds(gameOverDelay);
+        FindObjectOfType<MusicPlayer>().PlayDefeatMusic();
         SceneManager.LoadScene("Game Over");
     }
 
     public void LoadGame()
     {
         SceneManager.LoadScene("Game");
+        Destroy(FindObjectOfType<MusicPlayer>().gameObject);
         GameSession gameSession = FindObjectOfType<GameSession>();
         if (gameSession)
         {
@@ -31,11 +33,13 @@ public class Level : MonoBehaviour
     public void LoadCustomization()
     {
         SceneManager.LoadScene("Ship Customization");
-        Player[] player = Resources.FindObjectsOfTypeAll<Player>();
-        if (player.Length > 0)
+        Player player = FindObjectOfType<Player>();
+        if (player)
         {
-            Destroy(player[0].gameObject);
+            SceneManager.sceneLoaded -= player.WaitForGame;
+            Destroy(player.gameObject);
         }
+        Destroy(FindObjectOfType<MusicPlayer>().gameObject);
     }
 
     public void LoadStartMenu()
@@ -46,7 +50,18 @@ public class Level : MonoBehaviour
 
     public void LoadVictory()
     {
-        // TODO: load scene victory
+        StartCoroutine(DelayLoadVictory());
+    }
+
+    public IEnumerator DelayLoadVictory()
+    {
+        yield return new WaitForSeconds(gameOverDelay);
+        FindObjectOfType<MusicPlayer>().PlayVictoryMusic();
+        foreach (Transform child in FindObjectOfType<Player>().transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        SceneManager.LoadScene("Victory");
     }
 
     public void QuitGame()

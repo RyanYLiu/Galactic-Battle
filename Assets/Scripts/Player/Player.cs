@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     [Range(0,1)] [SerializeField] float deathSoundVolume = 0.2f;
     Pauser pauser;
     bool respawning = false;
+    [SerializeField] bool invincible = false;
+    bool processingHit = false;
 
 
     Respawner respawner;
@@ -32,22 +34,19 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("PO");
         SetupSingleton();
+    }
+
+    private void SetUpGame()
+    {
         bombs = GetComponent<PlayerBombs>();
-        Debug.Log(bombs);
         movement = GetComponent<PlayerMovement>();
         attack = GetComponent<PlayerShooting>();
         life = GetComponent<PlayerLife>();
         shield = GetComponent<PlayerShield>();
         focus = GetComponent<PlayerFocus>();
         myCollider = GetComponent<CircleCollider2D>();
-        SceneManager.sceneLoaded += WaitForGame;
         hitbox = GetComponent<SpriteRenderer>();
-    }
-
-    public void SetUpGame()
-    {
         respawner = FindObjectOfType<Respawner>();
         pauser = FindObjectOfType<Pauser>();
     }
@@ -63,22 +62,20 @@ public class Player : MonoBehaviour
         else
         {
             DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += WaitForGame;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
         InvincibilityPowerup invincibilityPowerup = other.GetComponent<InvincibilityPowerup>();
-        if (damageDealer)
+        if (!invincible && damageDealer)
         {
-            ProcessHit(damageDealer);
+            if (!processingHit) {
+                processingHit = true;
+                ProcessHit(damageDealer);
+            }
             
             if (other.GetComponent<BossLaser>())
             {
@@ -103,19 +100,21 @@ public class Player : MonoBehaviour
     {
         GameObject invincibilitySparkles = Instantiate(invincibilityVFX, transform.position, Quaternion.identity);
         invincibilitySparkles.transform.SetParent(transform);
-        myCollider.enabled = false;
+        invincible = true;
         yield return new WaitForSeconds(duration);
-        myCollider.enabled = true;
+        invincible = false;
         Destroy(invincibilitySparkles.gameObject);
     }
 
-    private void WaitForGame(Scene scene, LoadSceneMode mode)
+    public void WaitForGame(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Game")
         {
-            Debug.Log("game scene");
             ResetPlayer();
-            SceneManager.sceneLoaded -= WaitForGame;
+        }
+        else
+        {
+            EnableComponents(false);
         }
     }
 
@@ -125,6 +124,8 @@ public class Player : MonoBehaviour
         if (shield.IsShieldUp())
         {
             shield.ShieldsDown();
+            processingHit = false;
+            return;
         }
         else
         {
@@ -150,26 +151,36 @@ public class Player : MonoBehaviour
                 child.gameObject.SetActive(false);
             }
         }
+        processingHit = false;
     }
 
     public void ResetPlayer()
     {
         SetUpGame();
         EnableComponents(true);
+        SetRespawnStatus(false);
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(true);
+        }
         transform.position = respawner.transform.position;
     }
 
     private void Die()
     {
         PlayExplosionVFX();
-        EnableComponents(false);
         SetRespawnStatus(true);
+        myCollider.enabled = false;
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive(false);
         }
-        SceneManager.sceneLoaded += WaitForGame;
         FindObjectOfType<Level>().LoadGameOver();
+    }
+
+    public void Win()
+    {
+        SetRespawnStatus(true);
     }
 
     private void EnableComponents(bool val)

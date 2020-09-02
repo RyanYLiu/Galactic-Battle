@@ -7,6 +7,7 @@ public class PlayerShield : MonoBehaviour
     [SerializeField] bool shield = false;
     [SerializeField] GameObject shieldSprite;
     [SerializeField] float shieldOffset = 10f;
+    [SerializeField] float shieldDownTempInvincibilityDuration = 1f;
     GameObject shieldVFX;
     ShieldDisplay shieldDisplay;
     [SerializeField] AudioClip shieldsDownSound;
@@ -35,6 +36,7 @@ public class PlayerShield : MonoBehaviour
         shield = false;
         shieldDisplay.RemoveShield();
         Destroy(shieldVFX.gameObject);
+        GetComponent<Player>().StartInvincibility(shieldDownTempInvincibilityDuration);
         AudioSource.PlayClipAtPoint(shieldsDownSound, Camera.main.transform.position, shieldsDownSoundVolume);
     }
 

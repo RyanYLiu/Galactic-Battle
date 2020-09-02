@@ -295,9 +295,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0010610968, y: 0.0008058548}
+  m_Offset: {x: -0.0049871802, y: 0.0008058548}
   serializedVersion: 2
-  m_Radius: 0.09104252
+  m_Radius: 0.16171181
 --- !u!114 &8360769769105263524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,8 +310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39fbc70d94a1624197fe030e4d5d267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeCount: 3
-  maxLifeCount: 3
   deathVFX: {fileID: 6406023684439981936, guid: 5b6ee34158335d5499a1672307bdeb0e,
     type: 3}
   durationOfExplosion: 1
@@ -320,6 +318,7 @@ MonoBehaviour:
   invincibilityDuration: 2
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
   deathSoundVolume: 0.058
+  invincible: 0
 --- !u!212 &1149603031
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -469,6 +468,7 @@ MonoBehaviour:
   shieldSprite: {fileID: 2577336859652466357, guid: 597bcdca7481fc94a84de99e34dc3a8c,
     type: 3}
   shieldOffset: 0.2
+  shieldDownTempInvincibilityDuration: 1
   shieldsDownSound: {fileID: 8300000, guid: 6853532913d761d4c887680dc716ac0d, type: 3}
   shieldsDownSoundVolume: 0.05
 --- !u!1 &8360769769229087762

@@ -116,4 +116,9 @@ public class PlayerShooting : MonoBehaviour
     {
         attackLevel = Mathf.Clamp(attackLevel - 1, 1, maxLevel);
     }
+
+    public int GetAttackLevel()
+    {
+        return attackLevel;
+    }
 }
