@@ -12,6 +12,7 @@ public class EnemyBurst : Enemy
     void Start()
     {
         ResetShotCounter();
+        health = CalculateHealth();
     }
     
     /// <summary>

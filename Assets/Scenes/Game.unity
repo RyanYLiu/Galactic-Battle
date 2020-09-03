@@ -497,6 +497,11 @@ PrefabInstance:
       propertyPath: attackLevel
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8360769769105263524, guid: af791f64af3fece409117c0215f63825,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8360769769105263525, guid: af791f64af3fece409117c0215f63825,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1213,6 +1218,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 864219406, guid: 8271423859b0fdc4d8c7a916298c23ea, type: 3}
+      propertyPath: offset.y
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901814916, guid: 8271423859b0fdc4d8c7a916298c23ea, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901814916, guid: 8271423859b0fdc4d8c7a916298c23ea, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901814916, guid: 8271423859b0fdc4d8c7a916298c23ea, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901814916, guid: 8271423859b0fdc4d8c7a916298c23ea, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901814916, guid: 8271423859b0fdc4d8c7a916298c23ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901814916, guid: 8271423859b0fdc4d8c7a916298c23ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -90.599976
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901814917, guid: 8271423859b0fdc4d8c7a916298c23ea, type: 3}
+      propertyPath: offset.x
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 2246615690168060810, guid: 8271423859b0fdc4d8c7a916298c23ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1697,12 +1734,12 @@ PrefabInstance:
     - target: {fileID: 4773775858313187217, guid: 93a1d86ec526c3d42af7b9a417274279,
         type: 3}
       propertyPath: maxRandomSpawnTime
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4773775858313187217, guid: 93a1d86ec526c3d42af7b9a417274279,
         type: 3}
       propertyPath: minRandomSpawnTime
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4773775858313187217, guid: 93a1d86ec526c3d42af7b9a417274279,
         type: 3}
@@ -1745,6 +1782,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ebd8a97ac65ef174a8fbc93df1e30262,
         type: 2}
+    - target: {fileID: 4773775858313187217, guid: 93a1d86ec526c3d42af7b9a417274279,
+        type: 3}
+      propertyPath: minWavesBeforeBoss
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4773775858313187218, guid: 93a1d86ec526c3d42af7b9a417274279,
         type: 3}
       propertyPath: m_LocalPosition.x

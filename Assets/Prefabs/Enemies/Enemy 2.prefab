@@ -117,11 +117,10 @@ MonoBehaviour:
   pointValue: 150
   powerupDropRate: 0.2
   powerupList:
-  - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
+  - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
   projectileSpeed: 12
   minTimeBetweenShots: 0.7
   maxTimeBetweenShots: 3

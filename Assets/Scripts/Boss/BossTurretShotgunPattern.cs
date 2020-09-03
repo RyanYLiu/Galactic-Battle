@@ -12,6 +12,7 @@ public class BossTurretShotgunPattern : Enemy
     private void Start() 
     {
         ResetShotCounter();
+        health = CalculateHealth();
     }
     void Update()
     {

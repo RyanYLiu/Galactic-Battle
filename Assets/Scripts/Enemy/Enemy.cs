@@ -5,8 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Enemy")]
-    [SerializeField] float baseHealth = 1;
-    float health;
+    [SerializeField] protected float baseHealth = 1;
+    protected float health;
     [SerializeField] GameObject deathVFX;
     [SerializeField] float durationOfExplosion = 1f;
     [SerializeField] int pointValue = 100;
@@ -25,14 +25,12 @@ public class Enemy : MonoBehaviour
     [Range(0,1)] [SerializeField] protected float laserSoundVolume = 0.2f;
     [SerializeField] AudioClip deathSound;
     [Range(0,1)] [SerializeField] float deathSoundVolume = 0.2f;
-    PlayerShooting playerShooting;
 
     // Start is called before the first frame update
     void Start()
     {
         ResetShotCounter();
-        playerShooting = FindObjectOfType<PlayerShooting>();
-        health = baseHealth * playerShooting.GetAttackLevel();
+        health = CalculateHealth();
     }
 
     // Update is called once per frame
@@ -87,6 +85,12 @@ public class Enemy : MonoBehaviour
             Fire();
             ResetShotCounter();
         }
+    }
+
+    private protected float CalculateHealth()
+    {
+        PlayerShooting playerShooting = FindObjectOfType<PlayerShooting>();;
+        return baseHealth * playerShooting.GetAttackLevel();
     }
 
     protected void ResetShotCounter()

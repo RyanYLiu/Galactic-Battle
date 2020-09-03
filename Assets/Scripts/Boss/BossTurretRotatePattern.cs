@@ -18,7 +18,9 @@ public class BossTurretRotatePattern : Enemy
         ResetShotCounter();
         targetPosition = rotationEndpoints.transform.GetChild(targetPositionIndex);
         aimPosition = transform.GetChild(0);
+        health = CalculateHealth();
     }
+
     void Update()
     {
         Aim();

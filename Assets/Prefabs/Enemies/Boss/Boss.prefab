@@ -70,7 +70,6 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
@@ -82,9 +81,9 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.2
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.107
-  numPulses: 10
-  timeBetweenPulses: 0.1
+  deathSoundVolume: 0.05
+  numPulses: 7
+  timeBetweenPulses: 0.08
   rotationEndpoints: {fileID: 488755051}
   rotationSpeed: 1
 --- !u!1 &326825041
@@ -154,7 +153,11 @@ MonoBehaviour:
   durationOfExplosion: 1
   pointValue: 100
   powerupDropRate: 1
-  powerupList: []
+  powerupList:
+  - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
+  - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
+  - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
+  - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   projectileSpeed: 10
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
@@ -261,7 +264,6 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
@@ -273,7 +275,7 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.2
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.2
+  deathSoundVolume: 0.05
 --- !u!1 &869325818
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +329,6 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
@@ -339,12 +340,12 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.076
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.067
-  minNumPulses: 5
-  maxNumPulses: 5
+  deathSoundVolume: 0.05
+  minNumPulses: 3
+  maxNumPulses: 6
   timeBetweenPulses: 0.3
   firingDirections: {fileID: 421094008}
-  angleToRotate: 10
+  angleToRotate: 15
 --- !u!60 &869325820
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -441,7 +442,6 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
@@ -453,7 +453,7 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.2
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.2
+  deathSoundVolume: 0.05
 --- !u!1 &1099496622
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +553,6 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
@@ -565,7 +564,7 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.076
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.067
+  deathSoundVolume: 0.05
   numPulses: 5
   timeBetweenPulses: 0.01
   firingDirections: {fileID: 1026193717}
@@ -823,7 +822,6 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
@@ -835,7 +833,7 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.2
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.2
+  deathSoundVolume: 0.05
   numPulses: 5
   timeBetweenPulses: 0.3
   firingDirections: {fileID: 1447817489}
@@ -909,7 +907,6 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
@@ -921,9 +918,9 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.2
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.2
+  deathSoundVolume: 0.05
   numPulses: 10
-  timeBetweenPulses: 0.1
+  timeBetweenPulses: 0.2
   rotationEndpoints: {fileID: 514050878}
   rotationSpeed: 1
 --- !u!1 &1974845697
@@ -995,7 +992,6 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
@@ -1007,9 +1003,9 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.2
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.2
-  numPulses: 15
-  timeBetweenPulses: 0.01
+  deathSoundVolume: 0.05
+  numPulses: 10
+  timeBetweenPulses: 0.1
   firingDirections: {fileID: 498686117}
 --- !u!1 &2078612076
 GameObject:
@@ -1080,7 +1076,6 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
@@ -1092,7 +1087,7 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.076
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.067
+  deathSoundVolume: 0.05
   numPulses: 5
   timeBetweenPulses: 0.01
   firingDirections: {fileID: 99152121}
@@ -1149,11 +1144,10 @@ MonoBehaviour:
   powerupDropRate: 1
   powerupList:
   - {fileID: 3725505076350446278, guid: 294b3000bb9843745aa756b880cedee8, type: 3}
-  - {fileID: 4601340508722735658, guid: 10e51fa1086ea0848a7571384cd517e6, type: 3}
   - {fileID: 6124453549019093491, guid: 3a645cd91f2f13542b0d5e40986c3488, type: 3}
   - {fileID: 5462036122740635731, guid: 04dbbf5ddf2412b44847d9d10a66f373, type: 3}
   - {fileID: 7302014340208597390, guid: 459b5cf7fd17bed4485f83974ff535f6, type: 3}
-  projectileSpeed: 3
+  projectileSpeed: 4
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
   laserPrefab: {fileID: 3121831531004721960, guid: 7ec6f046f4df0f64088ddbc51554fa24,
@@ -1161,9 +1155,9 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 70e0b1e57a19bb144aea3bd7e1a1bc8f, type: 3}
   laserSoundVolume: 0.076
   deathSound: {fileID: 8300000, guid: 19a780ffbb36411419fcc9f281c56a78, type: 3}
-  deathSoundVolume: 0.067
-  minNumPulses: 5
-  maxNumPulses: 5
+  deathSoundVolume: 0.05
+  minNumPulses: 6
+  maxNumPulses: 9
   timeBetweenPulses: 0.5
   firingDirections: {fileID: 1858243392}
   angleToRotate: 10

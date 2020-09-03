@@ -12,6 +12,7 @@ public class BossTurretWavePattern : Enemy
     private void Start() 
     {
         ResetShotCounter();
+        health = CalculateHealth();
     }
     void Update()
     {
